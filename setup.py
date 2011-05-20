@@ -16,7 +16,7 @@ def read(*rnames):
 long_description = (
     read('README.txt')
     + '\n' +
-    read('js', 'json2', 'test_jquery_json.txt')
+    read('js', 'json2', 'test_json2.txt')
     + '\n' +
     read('CHANGES.txt'))
 
@@ -37,11 +37,10 @@ setup(
     install_requires=[
         'fanstatic',
         'setuptools',
-        'js.jquery'
         ],
     entry_points={
         'fanstatic.libraries': [
-            'jquery_json2 = js.json2:library',
+            'json2 = js.json2:library',
             ],
         },
     )
