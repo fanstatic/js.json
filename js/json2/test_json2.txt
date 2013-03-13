@@ -8,3 +8,13 @@ these resources to be included on a page::
   >>> from js.json2 import json2
   >>> json2.need()
 
+The most common use case for JSON2 is to patch browsers that don't have this
+functionality, typically Internet Explorer pre-version 8. We render the
+resource in a conditional comment::
+
+  >>> import fanstatic
+  >>> needed = fanstatic.init_needed()
+  >>> json2.need()
+  >>> print fanstatic.get_needed().render()
+  <!--[if lt IE 8]><script type="text/javascript" src="/fanstatic/json2/json2.js"></script><![endif]-->
+

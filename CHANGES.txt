@@ -1,11 +1,14 @@
 CHANGES
 *******
 
-2011-02-24 (unreleased)
+2012-10-08 (unreleased)
 =======================
 
-- Nothing changed yet.
+The most common use case for JSON2 is to patch browsers that don't have this
+functionality, typically Internet Explorer pre-version 8. We render the
+resource in a conditional comment.
 
+Update JSON2 source code to the version of 2012-10-08.
 
 2011-02-23 (2011-05-24)
 =======================
